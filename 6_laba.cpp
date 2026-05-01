@@ -158,7 +158,7 @@ bool proverka(string M1){
                 n+=1;
             }
         }
-        if(n==M1.size()){
+        if(n==M1.size()&&(M1.size()<=2)){
             return true;
         }
     }
@@ -192,7 +192,7 @@ int main(){
     vector<vector<int>> vectrshel(N,vector<int>(M,0));
     for (int i=0;i<M;i++){
         for (int j=0;j<N;j++){
-            vectr[i][j]+=randm();
+            vectr[i][j]=5;//randm();
             //cin>>vectr[i][j];
             vectrsort[i][j]+=srt(vectr[i][j]);
         }

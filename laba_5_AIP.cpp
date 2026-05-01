@@ -1,4 +1,14 @@
-
+#include <iostream>
+#include <vector>
+#include <random>
+#include <chrono>
+#include <cmath>
+#include <iomanip>
+#include <string>
+#include <algorithm>
+#include <cctype>
+#include <limits>
+#include <fstream>
 #include <windows.h>
 
 using namespace std;
@@ -47,7 +57,7 @@ bool nechet(string s){
 void a(){
     HANDLE hStdOut = GetStdHandle(STD_OUTPUT_HANDLE);
 	CONSOLE_SCREEN_BUFFER_INFO start_attribute;
-	GetConsoleScreenBufferInfo(hStdOut, &stteart_attribute);
+	GetConsoleScreenBufferInfo(hStdOut, &start_attribute);
     SetConsoleTextAttribute(hStdOut, start_attribute.wAttributes);
 }
 int main(){
